@@ -16,7 +16,7 @@ function App() {
        <h2 className="h5 mb-3">Clientes</h2>
        <p className="text-secondary">
          A listagem de clientes será exibida aqui.
-         <CustomerList customers={customers} />
+         <CustomerList list={customers} />
        </p>
      </main>
    </>
