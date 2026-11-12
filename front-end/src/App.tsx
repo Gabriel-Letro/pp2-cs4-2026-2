@@ -3,6 +3,7 @@ import { Homepage } from './components/Homepage'
 import { CustomersList } from './components/CustomersList'
 import { CustomersForm } from './components/CustomersForm'
 import { CarsList } from './components/CarsList'
+import { CarsForm } from './components/CarsForm'
 
 
 function App() {
@@ -47,13 +48,12 @@ function App() {
        <Routes>
          <Route path="/" element={<Homepage />} />
 
-
          <Route path="/customers" element={<CustomersList />} />
          <Route path="/customers/:id" element={<CustomersForm />} />
 
-
-
          <Route path="/cars" element={<CarsList />} />
+         <Route path="/cars/:id" element={<CarsForm />} />
+
        </Routes>
 
      </main>

@@ -13,8 +13,8 @@ router.get('/:id', controller.retrieveOne)
 /* POST um novo cliente */
 router.post('/', controller.create)
 
-/* PATCH um cliente existente */
-router.patch('/:id', controller.update)
+/* PUT um cliente existente */
+router.put('/:id', controller.update)
 
 /* DELETE um cliente */
 router.delete('/:id', controller.remove)

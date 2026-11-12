@@ -64,7 +64,7 @@ export function CustomersList() {
  // vazio, neste caso, indica que o useEffect() deverá ser
  // executado apenas uma vez, quando o componente estiver sendo
  // carregado na tela, para chamar fetchData().
- useEffect(() => fetchData(), [])
+ useEffect(() => { fetchData() }, [])
 
 
   return (
@@ -124,7 +124,7 @@ export function CustomersList() {
 
             {customers.length === 0 && (
               <tr>
-                <td colSpan={7} className="text-center text-secondary">
+                <td colSpan={8} className="text-center text-secondary">
                   Nenhum cliente cadastrado.
                 </td>
               </tr>
